@@ -30,7 +30,7 @@
     {% elsif page == 1 %}
     <li class="waves-effect"><a href="{{ url }}/blog">{{ page }}</a></li>
     {% else %}
-    <li class="waves-effect"><a href="{{ site.paginate_path | replace: ':num', page }}">{{ page }}</a></li>
+    <li class="waves-effect"><a href="{{ site.paginatePath | replace: ':num', page }}">{{ page }}</a></li>
     {% endif %}
   {% endfor %}
 
@@ -43,6 +43,6 @@
   {% if paginator.page == paginator.total_pages %}
   <li class="disabled"><a href="#!"><i class="material-icons">last_page</i></a></li>
   {% else %}
-  <li class="waves-effect"><a href="{{ site.paginate_path | replace: ':num', paginator.total_pages }}"><i class="material-icons">last_page</i></a></li>
+  <li class="waves-effect"><a href="{{ site.paginatePath | replace: ':num', paginator.total_pages }}"><i class="material-icons">last_page</i></a></li>
   {% endif %}
 </ul>

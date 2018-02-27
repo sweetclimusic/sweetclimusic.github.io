@@ -20,7 +20,7 @@ See [CHANGELOG](./CHANGELOG.md)
 |:-:|:-:|
 | ![Demo Tags](./assets/img/demo_tags.png) | ![Demo Resources](./assets/img/demo_resources.png) |
 
-See [example](http://astro36.me/Materialize-Jekyll/)
+See [example](http://www.greenfarm.games/)
 
 ## Features
 
@@ -35,9 +35,15 @@ See [example](http://astro36.me/Materialize-Jekyll/)
 
 - Fork this repository
 - Clone your forked repository
+- in the cloned directory ensure node modules and ruby gems are installed
+- run `gulp` task to build and then server your jekyll pages locally with browsersync
 
 ```bash
 git clone https://github.com/you/Materialize-Jekyll.git 
+cd <yourproject dir>
+npm install --save-dev
+bundle install
+gulp
 ```
 
 ## Usage
@@ -48,8 +54,8 @@ git clone https://github.com/you/Materialize-Jekyll.git
 ## License
 
 ```text
-Materialize Jekyll
-Copyright (c) 2017 Astro
+Freelance Jekyll
+Copyright (c) 2017 Green Farm Games
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

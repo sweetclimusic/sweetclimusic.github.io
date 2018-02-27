@@ -1,57 +1,61 @@
-title: Materialize Jekyll
-description: Materialize Theme for Jekyll, Github Pages
-url: http://astro36.me/Materialize-Jekyll/
-keywords: ["Programming", "Blog"]
-timezone: Asia/Seoul
+title: Uniy Developer
+email: sitecontact@greenfarm.games
+description: >- # this means to ignore newlines until "baseurl:"
+  Green Farn Games, An independent game studio.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "www.greenfarm.games" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: Europe/London
 permalink: pretty
+keywords: ["VR Programming","Mixed Reality Consulting", "Developer Blog", "Unity 3D", "Games Development"]
+about: >- # this means to ignore newlines until "author:"
+  Green Farn Games, An independent game studio specializing in children education games
+   and b2b VR multimedia solutions.
+author: 
+  name: sweetclimusic
+  instagram: greenfarm.games
+  email: sitecontact@greenfarm.games
+  linkin: ashlee-m-b93634b3
+  github: sweetclimusic
+  bitbucket:
+  googleAnalytics: "UA-114449958-1"
+  themeUrl: sweetclimusic.github.io
 
-about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam porta, odio vitae sodales malesuada, nibh diam convallis lectus, non scelerisque arcu lectus non nisi. Etiam tincidunt libero eget urna tristique faucibus. Pellentesque varius mi at placerat lobortis. Donec nec aliquam augue. Cras in gravida urna. Nulla dignissim semper accumsan. Nullam mattis felis metus, nec accumsan lorem porta et. Ut dictum dapibus est. In eu ultricies lorem. Duis semper elementum arcu, in rutrum tellus ornare eu."
-
-author:
-  codepen: 
-  disqus: 
-  dribbble: 
-  email: astr36@naver.com
-  facebook: 
-  flickr: 
-  foursquare: 
-  github: Astro36 # required
-  google_analytics: UA-77377358-3
-  google_plus: 
-  instagram: 
-  lastfm: 
-  linkedin: 
-  name: Astro # required
-  pinterest: 
-  soundcloud: 
-  stackoverflow: 
-  steam: 
-  telegram: psj1026
-  tumblr: 
-  twitter: 
-  weibo: 
-  xing: 
-  youtube: 
-
-defaults:
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-
+# Build settings
+markdown: kramdown
+remote-theme: Astro36/Materialize-Jekyll 
 plugins:
-  - jekyll-sitemap
   - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-sitemap
+  - jekyll-paginate
+
+
+exclude: ["Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json",
+          "vendor",
+          "_src",
+          _site,
+          path
+          ]
+
+# defaults:
+#   - scope:
+#       path: ""
+#       type: posts
+#     values:
+#       layout: post
+
+
 
 feed:
   path: atom.xml
 
-kramdown:
-  input: GFM
+markdown: kramdown
 
 paginate: 5
-paginate_path: "/blog/page/:num/"
-
+paginatePath: "/blog/page/:num/"
 sass:
   style: compressed

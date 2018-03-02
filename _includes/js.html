@@ -1,6 +1,8 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-<script type="text/javascript" src="{{ site.url }}/assets/js/materialize.min.js"></script>
-<script type="text/javascript" src="{{ site.url }}/assets/js/prism.min.js"></script>
+<script type="text/javascript" src="{{ "/assets/js/materialize.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/prism.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/particles.min.js" | prepend: site.baseurl }}"></script>
+<script type="text/javascript" src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 <script type="text/javascript">
   var now = new Date('{{ site.time }}').getTime();
   $(document).ready(function () {

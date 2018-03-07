@@ -2,6 +2,7 @@
 title: "Lorem Ipsum2"
 author: Astro36
 category: preset
+layout: post
 tags: [lorem, ipsum]
 ccl: by-nc-sa
 ---

@@ -41,14 +41,12 @@ exclude: ["Gemfile",
           "path"
           ]
 
-# defaults:
-#   - scope:
-#       path: ""
-#       type: posts
-#     values:
-#       layout: post
-
-
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
 
 feed:
   path: atom.xml
@@ -59,3 +57,4 @@ paginate: 5
 paginatePath: "/blog/page/:num/"
 sass:
   style: compressed
+  sass_dir: _sass

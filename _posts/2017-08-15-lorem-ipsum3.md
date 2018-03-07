@@ -2,6 +2,7 @@
 title: "Lorem Ipsum3"
 author: Astro36
 category: preset
+layout: post
 tags: [hello, world]
 ---
 

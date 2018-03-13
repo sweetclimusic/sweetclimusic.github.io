@@ -4,7 +4,6 @@ layout: default
 
 <style type="text/css">
   nav {
-    background-color: #673ab7;
     box-shadow: none;
     color: #fff; }
   nav a { color: #fff; }
@@ -14,24 +13,26 @@ layout: default
 
 {% capture url %}{{ site.url | append: "$" | replace: "/$", "" | replace: "$", "" }}{% endcapture %}
 
-<div class="section no-pad deep-purple">
+<div class="section no-pad green darken-3">
   <div  class="valign-wrapper" style="height: 380px;">
       <div id="particle-container">
           <canvas class="particles"></canvas>
       </div>
     <div class="container">
-      <h1 class="row center white-text logo-font title-reveal">{{ site.title }}</h1>
+      <div class="title-reveal">
+        <h1 class="row center white-text logo-font">{{ site.title }}</h1>
+        <h5 class="row center white-text logo-font">An independent games studio.</h5>
+      </div>
       <div class="row center">
-        <div class="description-typing col"> <!-- add typewriter affect -->
+        <div class="description-typing col s12 offset-s2 center"> <!-- add typewriter affect -->
           <h5 class="white-text logo-font">Unity 3D Development.</h5>
           <h5 class="white-text logo-font">Web Development.</h5>
           <h5 class="white-text logo-font">Virtual Reality Development.</h5>
-          <h5 class="white-text logo-font">An independent games studio.</h5>
         </div>
       </div>
       <div class="row center">
-        <a class="btn-flat btn-large waves-effect waves-light deep-purple logo-font white-text" href="{{ site.baseurl }}/about/" style="border: 1px #fff solid; margin-right: 4px;">About</a>
-        <a class="btn-flat btn-large waves-effect waves-light deep-purple logo-font white-text" href="{{ site.baseurl }}/blog/" style="border: 1px #fff solid; margin-left: 4px;">Blog</a>
+        <a class="btn-flat btn-large waves-effect waves-light green darken-3 logo-font white-text" href="{{ site.baseurl }}/about/" style="border: 1px #fff solid; margin-right: 4px;">About</a>
+        <a class="btn-flat btn-large waves-effect waves-light green darken-3 logo-font white-text" href="{{ site.baseurl }}/blog/" style="border: 1px #fff solid; margin-left: 4px;">Blog</a>
         <div style="margin-top: 32px;">
           <a href="#latest-images"><i class="material-icons white-text" style="font-size: 36px;">keyboard_arrow_down</i></a>
         </div>

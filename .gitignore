@@ -1,8 +1,0 @@
-_site/
-.sass-cache/
-.jekyll-metadata
-node_modules/
-path/
-.DS_Store
-.bundle/
-GEMFILE.lock

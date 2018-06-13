@@ -5,3 +5,4 @@ node_modules/
 path/
 .DS_Store
 .bundle/
+GEMFILE.lock

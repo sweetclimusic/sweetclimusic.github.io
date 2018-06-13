@@ -3,7 +3,7 @@ email: sitecontact@greenfarm.games
 description: >- # this means to ignore newlines until "baseurl:"
   Green Farm Games, An independent game studio.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "www.greenfarm.games" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://www.greenfarm.games" # the base hostname & protocol for your site, e.g. http://example.com
 timezone: Europe/London
 permalink: pretty
 keywords: ["VR Programming","Mixed Reality Consulting", "Developer Blog", "Unity 3D", "Games Development"]

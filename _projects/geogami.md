@@ -4,7 +4,7 @@ author: {{site.author}}
 layout: project
 tags: ['web', 'Unity','Unity3d','WebGL','Gamkedo']
 image:
-  path: {{ site.baseurl }}/assets/img/projects/geogami.png"
+  path: "{{site.url}}/assets/img/projects/geogami.png"
 site:
   path: https://evergames.itch.io/geogami
 ---

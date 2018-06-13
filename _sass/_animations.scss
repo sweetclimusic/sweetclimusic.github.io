@@ -1,0 +1,248 @@
+body{
+    //hide excessive width for sliding animations.
+    overflow-x: hidden;
+}
+
+.title-reveal{
+    
+    h1{
+        &:first-child{
+            opacity: 0;
+            height: 0;
+            animation: title-reveal 1s steps(40,end);
+            animation-delay: 8.75s;
+            animation-fill-mode: forwards;
+        }
+    }
+    h5{
+        &:nth-child(2){
+            opacity: 0;
+            height: 0;
+            animation: title-reveal 1s steps(40,end);
+            animation-delay: 9.75s;
+            animation-fill-mode: forwards;
+        }
+    }
+    
+
+}
+
+//lower Header H1,and H5 elements with medai query
+/*********************
+  use http://materializecss.com Media Query Classes structure.
+  // Media Query Ranges
+  $small-screen-up: 601px !default;
+  $medium-screen-up: 993px !default;
+  $large-screen-up: 1201px !default;
+  $small-screen: 600px !default;
+  $medium-screen: 992px !default;
+  $large-screen: 1200px !default;
+**********************/
+
+
+//typewriter effect
+.description-typing{
+    display: inline-flex;
+    width: 100%;
+    margin: 0 auto;
+    //margin-left: 14rem; 
+      h5{
+          white-space: nowrap; //keep on one line
+          overflow:hidden; //don't show until animation plays
+          border-right: .15em solid white;
+          margin: 0 auto; //sort out top and bottom;
+          margin-left: 25%; // take up 25% of left by default
+          text-align: center; 
+          position: absolute; 
+          left:25%; //position box against the remaining width;
+          max-width:50%;
+          width: 100%;
+          min-height: 1.3em;
+          height: auto;
+          transform: translate(-50%, -50%);
+          //media queries based on heights
+          //height ranges
+// $mini-screen-height: 320px !default;
+// $short-screen-height: 568px !default;
+// $mid-screen-height: 736px !default;
+// $tall-screen-height: 1024px !default;
+// $mini-screen-up: 321px !default;
+// $short-screen-up: 668px !default;
+// $mid-screen-up: 737px !default;
+// $tall-screen-up: 835px !default;
+// $mini-screen-and-up: "only screen and (min-height : #{mini-screen-up})" !default;
+// $short-height-only: "only screen and (min-height : #{$mini-screen-up}) and (max-height : #{$short-screen-height})" !default;
+// $mid-height-only: "only screen and (min-height : #{$short-screen-up}) and (max-height : #{$mid-screen-height})" !default;
+// $mid-height-and-down: "only screen and (max-height : #{tall-screen-up})" !default;
+// $mid-height-and-up: "only screen and (min-height : #{$mid-screen-height})" !default;
+// $tall-height-and-up: "only screen and (min-height : #{$tall-screen-up})" !default;
+// $mini-screen-only: "only screen and (max-height : #{$mini-screen-height})" !default;
+          top: 50%; 
+          bottom: 50%;
+          // target min-height: 326px to max 512
+          @media #{$mini-height-and-up} {
+            top: 32%; 
+            bottom: 68%;
+          }
+          // target min-height: 601px  to max-height: 834px
+          @media #{$short-height-and-up} {
+            top: 27%;
+            bottom: 73%;
+          }
+          //target min-height 835px
+          @media #{$mid-height-and-up} {
+            top: 20%;
+            bottom: 80%;
+          }
+        //   @media only screen and (min-width : 375px) and (max-width : #{$medium-screen}){
+        //     top: 50%;
+        //     bottom: 50%;
+        //   }
+          //every h5 clid of typing will play this animation.
+          //but have to call n child to apply delay animation.
+         &:nth-child(1){
+              //width: 0;
+              opacity: 0;
+              //left: 11.25em;
+              animation: typing 2s steps(40,end),blink 0.5s step-end 3;
+              animation-delay: 2s;
+              animation-fill-mode: forwards;
+          } 
+          &:nth-child(2){
+              //width: 0;
+              opacity: 0;
+              //left: 3.75em;
+            //   @media #{$tiny-only} {
+            //     left:5%;
+            //     transform: translateX(5%);
+            //   }
+            //   @media ($small-screen-up) {
+            //     left:10%;
+            //   }
+              animation: typing2 2s steps(40,end),blink 0.5s step-end 3;
+              animation-delay: 4.5s;
+              animation-fill-mode: forwards;
+          }
+          &:nth-child(3){
+              //width: 0;
+              opacity: 0;
+              //left: -3.75em;
+            //   @media #{$tiny-only} {
+            //     left:-3%;
+            //   }
+            //   @media ($small-screen-up) {
+            //     left:-8%;
+            //   }
+              animation: typing3 2s steps(40,end),blink 0.5s step-end 3;
+              animation-delay: 7s;
+              animation-fill-mode: forwards;
+  
+          }
+         
+      }
+  }
+  
+  //animation keyframe defines, these repeat due to width being different.
+  @keyframes typing {
+    from,
+    to {
+        width: 0;
+        opacity: 1;
+    }
+    30%,49.9%{
+        width: 11em;
+        border-right: .15em solid white;
+    }
+  }
+  
+  @keyframes typing2 {
+    from,
+    to {
+        width: 0;
+        opacity: 1;
+    }
+      30%,49.9%{
+        width: 9.5em;
+        border-right: .15em solid white;
+      }
+  }
+  @keyframes typing3 {
+      from,
+      to {
+          width: 0;
+          opacity: 1;
+      }
+      1%,99.9%{
+        border-right: .15em solid white;
+      }
+     30%,49.9%{
+        width: 13.785em;
+     }
+  }
+    
+@keyframes blink {
+    from,
+    to {
+    border-color: transparent;
+    }
+    50% {
+    border-color: white; //#747474;
+    }
+}
+    
+@keyframes title-reveal {
+    30%,49.9%{
+        opacity:0.5;
+        height: 2.284rem;
+    }
+    99.9%,100%{
+        opacity: 1;
+        height: 4.568rem;
+    }
+}
+
+@keyframes div-reveal{
+    from{
+        opacity: 0;
+        height: 0;
+    }
+    to{
+        opacity: 1;
+        height: $navbar-height-mobile;
+        @media #{$medium-and-up} {
+            height:$navbar-height;
+        }
+    }
+}
+
+@keyframes slidein {
+    to {
+      transform: translateX(0);
+      width: 100%;
+    }
+}
+
+.hide-transition{
+    animation: 0.5s ease-in reverse 1 forwards div-reveal ;
+}
+//element must have a height defined.
+.show-transition{
+    animation: 0.5s ease-in normal 1 forwards div-reveal;
+}
+
+.slideIn-transition{
+    animation: 0.5s ease-in 0.3s normal 1 forwards slidein;
+}
+
+.slideOut-transition{
+    @extend .slideIn-transition;
+    animation-direction: reverse;
+}
+.slideOut-transition-right{
+    @extend .slideOut-transition;
+    animation-name: slide-right;
+}
+
+.animation-stop .played{
+    animation: none;
+}

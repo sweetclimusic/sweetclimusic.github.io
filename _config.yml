@@ -1,0 +1,68 @@
+title: Green Farm Games
+email: sitecontact@greenfarm.games
+description: >- # this means to ignore newlines until "baseurl:"
+  Green Farm Games, An independent game studio.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "www.greenfarm.games" # the base hostname & protocol for your site, e.g. http://example.com
+timezone: Europe/London
+permalink: pretty
+keywords: ["VR Programming","Mixed Reality Consulting", "Developer Blog", "Unity 3D", "Games Development"]
+about: >- # this means to ignore newlines until "author:"
+  Green Farm Games, An independent game studio specializing in children education games
+   and b2b VR multimedia solutions.
+author: 
+  name: sweetclimusic
+  instagram: greenfarm.games
+  email: sitecontact@greenfarm.games
+  linkin: ashlee-m-b93634b3
+  github: sweetclimusic
+  bitbucket:
+  googleAnalytics: "UA-114449958-1"
+  themeUrl: sweetclimusic.github.io
+
+story: Green Farm Games, An independent video games studio specializing in children educational games
+   and Mixed reality( AR, VR, XR ) multimedia solutions and experiences for local and global businesses. Situatied on a working farm in Clifton, West Yorkshire, we draw insperaton from the surrounding picturesque rollings green hills here at Green Farm Games.
+# Build settings
+markdown: kramdown
+remote-theme: sweetclimusic/Freelance
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-sitemap
+  - jekyll-paginate
+
+
+exclude: ["Gemfile",
+          "Gemfile.lock",
+          "gulpfile.js",
+          "node_modules",
+          "package.json",
+          "vendor",
+          "_src",
+          "_site",
+          "path"
+          ]
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name
+  clients:
+    output: true
+    permalink: /clients/:name
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+
+feed:
+  path: atom.xml
+
+markdown: kramdown
+
+paginate: 5
+paginatePath: "/blog/page/:num/"
+sass:
+  style: compressed
+  sass_dir: _sass

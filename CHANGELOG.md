@@ -2,6 +2,6 @@
 
 ## v1.0.0
 
-Released Oct 28, 2017
+Released June 13, 2018
 
 First Release

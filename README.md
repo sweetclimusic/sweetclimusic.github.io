@@ -1,8 +1,8 @@
-# Materialize-Jekyll
+# FreeLance-Jekyll
 
-![Logo](./assets/img/materialize_jekyll.png)
+![Logo](./assets/img/freelance.jpg)
 
-> Materialize Theme for Jekyll, Github Pages
+> FreeLance Theme for Jekyll, Github Pages
 
 
 
@@ -36,6 +36,7 @@ See [example](http://www.greenfarm.games/)
 - Fork this repository
 - Clone your forked repository
 - in the cloned directory ensure node modules and ruby gems are installed
+- node js is using babel-register for ES6 support in node.
 - run `gulp` task to build and then server your jekyll pages locally with browsersync
 
 ```bash
@@ -55,7 +56,7 @@ gulp
 
 ```text
 Freelance Jekyll
-Copyright (c) 2017 Green Farm Games
+Copyright (c) 2018 Green Farm Games Ltd
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

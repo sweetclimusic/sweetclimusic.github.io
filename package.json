@@ -25,6 +25,7 @@
     "gulp-sass": "^4.0.1",
     "gulp-sourcemaps": ">=2.6.4",
     "gulp-uglify": "^3.0.0",
+    "gulp4-run-sequence": "0.0.3",
     "hoek": "^5.0.3",
     "jshint": ">=2.9.5",
     "run-sequence": ">=2.2.1"

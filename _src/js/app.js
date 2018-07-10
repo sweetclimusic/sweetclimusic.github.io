@@ -108,7 +108,38 @@ window.onload = function(){
         $(el).on("animationend",animationListener,false);
       });
     };
+
+    //static Image Swap to gif
+    /**
+     * https://stackoverflow.com/questions/33479804/show-static-image-but-swap-with-animated-gif-once-gif-if-fully-loaded
+     * @param {*} i 
+     * @param {*} img 
+     */
+    $.fn.preload = function (i, img) {
+    console.log(img);
+    var $img, url, $pre;
+
+    $img = $(img);
+
+    // incoming <img/> must have a 'data-gif' attribute
+    if (! $img || ! $img.data('gif')) {
+      return;
+    }
+
+    url = $img.data('gif');
+    $pre = $('<img />');
+
+    // Set up handler to replace original images's 'src' attribute
+    // with the data-gif URL once the replacement is loaded
+    $pre.on('load', function() {
+      $img.attr('src', url);
+    });
+
+    $pre.attr('src', url);
+    };
 })(jQuery);   
+
+
 
   function animationListener(event){
     $(event).addClass("played");

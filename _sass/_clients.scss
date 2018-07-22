@@ -1,0 +1,15 @@
+//build a client card
+.card-image.clients{
+    float:left;
+    position: relative;
+    left : 30px;
+	top : -30px;
+	height : 1.6rem; //320px;
+    width : 3rem; //530px;
+    overflow: hidden;
+}
+
+//swap text and image layout, alternative sides
+.card-image.clients:nth-child(even){
+    float:right;
+}

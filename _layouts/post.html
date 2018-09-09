@@ -20,7 +20,9 @@ layout: default
               {% unless page.image.path %}
               <span class="card-title truncate">{{ page.title }}</span>
               {% endunless %}
+              {% unless post.date %}
               <p style="font-weight: 600; margin-bottom: 10px;"><time datetime="{{ post.date }}">{{ page.date | date_to_string }}</time>{% if site.author.disqus %} | <a href="{{ site.baseurl }}{{ page.url }}#disqus_thread" data-disqus-identifier="{{ page.id }}">Comment</a>{% endif %}</p>
+              {% endunless %}
               <div id="post-content">
                 {{ content | replace: "<img", "<img class='materialboxed'" }}
               </div>

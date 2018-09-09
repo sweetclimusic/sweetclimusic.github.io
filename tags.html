@@ -36,7 +36,9 @@ permalink: /tags/
                   <ul class="collection">
                     {% for post in site.tags[tag_name] %}
                     <li class="collection-item">
+                      {% unless post.date %}
                       <strong><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></strong><br>
+                      {% endunless %}
                       <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                     </li>
                     {% endfor %}

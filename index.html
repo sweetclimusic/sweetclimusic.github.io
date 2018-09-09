@@ -110,7 +110,7 @@ layout: default
               <div class="card-image">
                 <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path }}">
                 <span class="card-title" style="background-color: rgba(0,0,0,.3); cursor: pointer; padding: 8px 24px; width: 100%;" onclick="window.location='{{ site.baseurl }}{{ post.url }}'">
-                    {{ post.title }}<time datetime="{{ post.date }}" style="font-size: 16px;"> | {{ post.date | date_to_string }}</time>
+                    {{ post.title }}{% unless post.date %}<time datetime="{{ post.date }}" style="font-size: 16px;"> | {{ post.date | date_to_string }}</time>{% endunless %}
                 </span>
               </div>
               <div class="card-stacked">

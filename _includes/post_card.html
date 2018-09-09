@@ -12,7 +12,9 @@
       {% unless post.image.path %}
       <span class="card-title">{{ post.title }}</span>
       {% endunless %}
+      {% unless post.date %}
       <p style="font-weight: 600; margin-bottom: 10px;"><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></p>
+      {% endunless %}
       <div id="post-content">
         {{ post.content | strip_html | truncate: 100, "…" }}
       </div>

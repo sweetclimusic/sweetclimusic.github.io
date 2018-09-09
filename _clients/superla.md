@@ -2,8 +2,8 @@
 title: "Superla"
 layout: client
 image:
-  path: "{{ site.url }}/assets/img/clients/logo_superla.png"
+  path: "/assets/img/clients/logo_superla.png"
   copyright: "superla.tv"
 webpage: "superla.tv"
 ---
-"really good quote to get me more work, thanks."
+"Superla TV, a video production company based in Leeds. I work in close partnership with superla Tv to bring 360 experience to life."

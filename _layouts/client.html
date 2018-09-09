@@ -12,7 +12,7 @@ layout: default
           <div class="card">
             {% if page.image.path %}
             <div class="card-image clients">
-              <img class="materialboxed" data-caption="© {{ page.image.copyright }}" src="{{ page.image.path }}">
+              <img class="materialboxed" data-caption="© {{ page.image.copyright }}" src="{{ page.image.path | prepend: site.url }}">
               <span class="card-title truncate" style="background-color: rgba(0,0,0,.3); width: 100%;">{{ page.title }}</span>
             </div>
             {% endif %}
@@ -29,7 +29,7 @@ layout: default
                 <table>
                   <tr>
                     <td>
-                      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://i.creativecommons.org/l/{{ page.ccl | downcase }}/4.0/88x31.png" alt="크리에이티브 커먼즈 라이선스"></a>
+                      <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img src="https://i.creativecommons.org/l/{{ page.ccl | downcase }}/4.0/88x31.png" alt="creativecommons"></a>
                     </td>
                     <td>
                       <span style="font-size: 12px; font-weight: 400; min-height: 31px;">

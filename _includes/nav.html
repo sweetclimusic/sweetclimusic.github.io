@@ -13,24 +13,22 @@
 
 <ul class="dropdown-content" id="dropdown-menu">
   <li><a class="logo-font waves-effect" href="{{ site.baseurl }}/blog/">Posts</a></li>
-  <li><a class="logo-font waves-effect" href="{{ site.baseurl }}/archive/">Archive</a></li>
-  <li><a class="logo-font waves-effect" href="{{ site.baseurl }}/categories/">Categories</a></li>
-  <li><a class="logo-font waves-effect" href="{{ site.baseurl }}/tags/">Tags</a></li>
-  <li class="divider"></li>
-  <li><a class="logo-font waves-effect" href="{{ site.baseurl }}/resources/">Resources</a></li>
+  <li><a class="logo-font waves-effect" href="{{ site.baseurl }}/projects/">Projects</a></li>
+  <li><a class="logo-font waves-effect" href="{{ site.baseurl }}/clients/">Clients</a></li>
 </ul>
 
 <ul class="side-nav" id="mobile-nav">
   <li>
     <div class="user-view">
       <div class="background green"></div>
-      <img class="circle materialboxed" data-caption="{{ site.author.name }}" src="https://github.com/{{ site.author.github }}.png" alt="Avatar">
-      <span class="white-text name">{{ site.author.name }}</span>
+      <img class="circle materialboxed" data-caption="{{ site.title }}" src="{{ site.baseurl }}/img/logo.png" alt="Site Logo">
+      <span class="white-text name">Hire Us</span>
       {% if site.author.email %}
       <a href="mailto:{{ site.author.email }}"><span class="white-text email">{{ site.author.email }}</span></a>
       {% endif %}
     </div>
   </li>
+  <li class="divider"></li>
   <li><a class="waves-effect" href="{{ site.baseurl }}/">Home</a></li>
   <li class="no-padding">
     <ul class="collapsible collapsible-accordion" id="nav-blog">
@@ -39,13 +37,9 @@
         <div class="collapsible-body">
           <ul>
             <li><a href="{{ site.baseurl }}/blog/">Posts</a></li>
-            <li><a href="{{ site.baseurl }}/archive/">Archive</a></li>
-            <li><a href="{{ site.baseurl }}/categories/">Categories</a></li>
-            <li><a href="{{ site.baseurl }}/tags/">Tags</a></li>
           </ul>
         </div>
       </li>
     </ul>
   </li>
-  <li><a class="waves-effect" href="{{ site.baseurl }}/resources/">Resources</a></li>
 </ul>

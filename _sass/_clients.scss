@@ -13,3 +13,18 @@
 .card-image.clients:nth-child(even){
     float:right;
 }
+
+h5.clients{
+	position : absolute;
+	left : 30px;
+	bottom : -120px;
+	font-size : 6rem;
+	color : #C3C3C3;
+}
+h6.clients{
+	position : absolute;
+	left : 30px;
+	bottom : -55px;
+	font-size : 2rem;
+    color : #C3C3C3;
+}

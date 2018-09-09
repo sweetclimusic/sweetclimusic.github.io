@@ -2,13 +2,13 @@
   <div class="card">
     {% if post.image.path %}
     <div class="card-image">
-      <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path }}">
+      <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path | prepend: site.url }}">
       <span class="card-title" style="background-color: rgba(0,0,0,.3); width: 100%;">
         {{ post.title }}
       </span>
     </div>
     {% endif %}
-    <div class="card-content" style="cursor: pointer;" onclick="window.location='{{ site.baseurl }}{{ post.url }}'">
+    <div class="card-content" style="cursor: pointer;" onclick="window.location='{{ post.url | prepend: site.url }}'">
       {% unless post.image.path %}
       <span class="card-title">{{ post.title }}</span>
       {% endunless %}
@@ -19,7 +19,7 @@
       {% if site.author.disqus %}
       <div class="valign-wrapper" style="margin-top: 16px;">
         <i class="material-icons" style="color: #9e9e9e;">comment</i>&nbsp;
-        <span class="disqus-comment-count" data-disqus-identifier="{{ post.id }}" data-disqus-url="{{ site.baseurl }}{{ post.url }}">Comment</span>
+        <span class="disqus-comment-count" data-disqus-identifier="{{ post.id }}" data-disqus-url="{{ post.url | prepend: site.url }}">Comment</span>
       </div>
       {% endif %}
     </div>

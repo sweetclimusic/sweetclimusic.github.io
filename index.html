@@ -89,16 +89,7 @@ layout: default
       {% for post in site.clients %}
         {% if post.image.path %}
         <div class="col s12">
-          <article>
-            <div class="card hoverable large slideItem">
-              <div class="card-image">
-                <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path }}">
-                <span class="card-title" style="background-color: rgba(0,0,0,.3); cursor: pointer; padding: 8px 24px; width: 100%;" onclick="window.location='{{ site.baseurl }}{{ post.url }}'">
-                  {{ post.title }}
-                </span>
-              </div>
-            </div>
-          </article>
+          {% include post_card.html post=post %}
         </div>
         {% endif %}
       {% endfor %}

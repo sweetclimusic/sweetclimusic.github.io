@@ -17,9 +17,9 @@ permalink: /archive/
               <ul class="collection">
               {% for post in site.posts %}
                 <li class="collection-item">
-                  {% unless post.date %}
+                  {% if post.date %}
                   <strong><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></strong><br>
-                  {% endunless %}
+                  {% endif %}
                   <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
                 </li>
               {% endfor %}

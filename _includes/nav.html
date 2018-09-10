@@ -1,7 +1,8 @@
 <div class="navbar-fixed hide">
   <nav>
     <div class="nav-wrapper green darken-1">
-      <a class="brand-logo logo-font center white-text" href="{{ site.baseurl }}" style="max-width: 50%; max-height: 56px; overflow:hidden;">{{ site.title }}</a>
+      <a class="brand-logo logo-font center white-text" href="{{ site.baseurl }}" style="max-width: 50%; max-height: 56px; overflow:hidden;">
+        <img class="responsive-img badge" src="{{ "/assets/img/icons/badge.png" | prepend: site.url }}" alt="{{ site.title }}" data-caption="{{ site.title }}"></a>
       <a class="button-collapse" data-activates="mobile-nav" href="#"><i class="material-icons lime-text text-accent-1">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a class="logo-font" href="{{ site.baseurl }}/">Home</a></li>
@@ -21,7 +22,7 @@
   <li>
     <div class="user-view">
       <div class="background green"></div>
-      <img class="circle materialboxed" data-caption="{{ site.title }}" src="{{ site.baseurl }}/img/logo.png" alt="Site Logo">
+      <img class="circle materialboxed" data-caption="{{ site.title }}" src="{{ "/assets/img/logo.png" | prepend: site.url }}" alt="Site Logo">
       <span class="white-text name">Hire Us</span>
       {% if site.author.email %}
       <a href="mailto:{{ site.author.email }}"><span class="white-text email">{{ site.author.email }}</span></a>

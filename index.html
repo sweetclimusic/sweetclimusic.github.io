@@ -19,9 +19,10 @@ layout: default
           <canvas class="particles"></canvas>
       </div>
     <div class="container">
-      <div class="title-reveal">
-        <h1 class="row center white-text logo-font">{{ site.title }}</h1>
-        <h5 class="row center white-text logo-font">An independent games studio.</h5>
+      <div class="title-reveal center">
+        <img class="row hero" src="{{ "/assets/img/icons/badge.png" | prepend: site.url }}" alt="{{ site.title }}" data-caption="{{ site.title }}">
+        <h5 class="row white-text logo-font">An independent games studio.</h5>
+        
       </div>
       <div class="row center">
         <div class="description-typing col s12 offset-s2 center"> <!-- add typewriter affect -->
@@ -106,7 +107,7 @@ layout: default
         {% if post.image.path %}
         <div class="col s12">
           <article>
-            <div class="card large hoverable slideItem">
+            <div class="card hoverable slideItem">
               <div class="card-image">
                 <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path }}">
                 <span class="card-title" style="background-color: rgba(0,0,0,.3); cursor: pointer; padding: 8px 24px; width: 100%;" onclick="window.location='{{ site.baseurl }}{{ post.url }}'">
@@ -115,7 +116,7 @@ layout: default
               </div>
               <div class="card-stacked">
                 <div class="card-content">
-                  <p class="flow-text">{{ post.excerpt }}</p>
+                  <p class="flow-text">{{ post.content | strip_html | truncatewords:50}}</p>
                 </div>
               </div>
             </div>

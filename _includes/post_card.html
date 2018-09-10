@@ -1,8 +1,8 @@
 <article>
   <div class="card large hoverable slideItem">
     {% if post.image.path %}
-    <div class="card-image">
-      <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path | prepend: site.url }}">
+    <div class="card-image thumbnail">
+      <img class="responsive-img left" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path | prepend: site.url }}">
       <span class="card-title" style="background-color: rgba(0,0,0,.3); width: 100%;">
         {{ post.title }}
       </span>

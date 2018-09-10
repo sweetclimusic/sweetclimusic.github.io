@@ -2,13 +2,12 @@ body{
     //hide excessive width for sliding animations.
     overflow-x: hidden;
 }
-
+//static elements, for title reveal, must list and do their timings below
 .title-reveal{
     
-    h1{
+    img{
         &:first-child{
             opacity: 0;
-            height: 0;
             animation: title-reveal 1s steps(40,end);
             animation-delay: 7.75s;
             animation-fill-mode: forwards;
@@ -17,7 +16,6 @@ body{
     h5{
         &:nth-child(2){
             opacity: 0;
-            height: 0;
             animation: title-reveal 1s steps(40,end);
             animation-delay: 8.75s;
             animation-fill-mode: forwards;
@@ -193,11 +191,11 @@ body{
 @keyframes title-reveal {
     30%,49.9%{
         opacity:0.5;
-        height: 2.284rem;
+        height: 50%;
     }
     99.9%,100%{
         opacity: 1;
-        height: 4.568rem;
+        height: 100%;
     }
 }
 

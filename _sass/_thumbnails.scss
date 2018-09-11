@@ -1,0 +1,39 @@
+//build a client card
+.card-image.thumbnail{
+    float:left;
+    position: relative;
+    left : 30px;
+	top : -30px;
+	height : 1.6rem; //320px;
+    width : 3rem; //530px;
+    overflow: hidden;
+}
+
+//swap text and image layout, alternative sides
+.card-image.thumbnail:nth-child(even){
+    float:right;
+}
+
+h5.thumbnail{
+	position : absolute;
+	left : 30px;
+	bottom : -120px;
+	font-size : 6rem;
+	color : #C3C3C3;
+}
+h6.thumbnail{
+	position : absolute;
+	left : 30px;
+	bottom : -55px;
+	font-size : 2rem;
+    color : #C3C3C3;
+}
+
+img.responsive-img.left{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	height: auto;
+	width: 100%;
+	transform: translate(-50%,-50%)
+}

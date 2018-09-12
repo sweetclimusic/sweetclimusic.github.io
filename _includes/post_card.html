@@ -2,8 +2,10 @@
   <div class="card large hoverable slideItem">
     {% if post.image.path %}
     <div class="card-image thumbnail">
-      <img class="responsive-img left" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path | prepend: site.url }}">
-      <span class="card-title" style="background-color: rgba(0,0,0,.3); width: 100%;">
+      <img class="left" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path | prepend: site.url }}">
+    </div>
+    <div class="card-title postcard" style="background-color: rgba(0,0,0,.3); width: 100%;">
+      <span>
         {{ post.title }}
       </span>
     </div>
@@ -12,11 +14,11 @@
       {% unless post.image.path %}
       <span class="card-title">{{ post.title }}</span>
       {% endunless %}
-      {% if post.date %}
-      <p style="font-weight: 600; margin-bottom: 10px;"><time datetime="{{ post.date }}">{{ post.date | date_to_string }}</time></p>
+      {% if post.publish.date %}
+      <p style="font-weight: 600; margin-bottom: 10px;"><time datetime="{{ post.publish.date }}">{{ post.publish.date | date_to_string }}</time></p>
       {% endif %}
-      <div id="post-content">
-        {{ post.content | strip_html | truncate: 100, "…" }}
+      <div id="post-content flow-text">
+        {{ post.content | strip_html | truncate: 140, "…" }}
       </div>
       {% if site.author.disqus %}
       <div class="valign-wrapper" style="margin-top: 16px;">

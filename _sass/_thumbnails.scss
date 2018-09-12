@@ -2,16 +2,12 @@
 .card-image.thumbnail{
     float:left;
     position: relative;
-    left : 30px;
-	top : -30px;
-	height : 1.6rem; //320px;
-    width : 3rem; //530px;
+    left : 1.8rem;
+	top : -1.8rem;
+	height : 60%; //320px;
+	width : 40%; //530px;
+	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
     overflow: hidden;
-}
-
-//swap text and image layout, alternative sides
-.card-image.thumbnail:nth-child(even){
-    float:right;
 }
 
 h5.thumbnail{
@@ -29,11 +25,18 @@ h6.thumbnail{
     color : #C3C3C3;
 }
 
-img.responsive-img.left{
-	position: absolute;
-	left: 50%;
+.card-image .img.left{
+	position: relative;
+	left: 55%;
 	top: 50%;
 	height: auto;
 	width: 100%;
 	transform: translate(-50%,-50%)
+}
+
+.card-title.postcard{
+	display: flex;
+	& > span{
+		margin-left: 1.8rem;
+	}
 }

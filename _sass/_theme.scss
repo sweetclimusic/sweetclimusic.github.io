@@ -132,3 +132,16 @@ img.hero{
 .ghost-title > .specter.shortoffset{
   transform: translate(-5%, -15%)
 }
+
+.card img.excerpt-img{
+  width:315px;
+  min-width:19.68rem;
+  max-width:39.375rem;
+  height:250px;
+  min-height:15.625rem;
+  max-height:31.25rem;
+}
+
+div.post{
+  margin-bottom: 2.625rem;
+}

@@ -1,5 +1,9 @@
 <article>
+  {% if post.markdown %}
+  <div class="card hoverable slideItem">
+  {% else %}
   <div class="card large hoverable slideItem">
+  {% endif %}
     {% if post.image.path %}
     <div class="card-image thumbnail">
       <img class="left" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path | prepend: site.url }}">
@@ -18,7 +22,11 @@
       <p style="font-weight: 600; margin-bottom: 10px;"><time datetime="{{ post.publish.date }}">{{ post.publish.date | date_to_string }}</time></p>
       {% endif %}
       <div id="post-content flow-text">
-        {{ post.content | strip_html | truncate: 140, "…" }}
+        {% if post.markdown %}
+          {{ include.post.content | markdownify  }}
+        {% else %}
+          {{ include.post.content | strip_html | truncate: 140, "…" }}
+        {% endif %}
       </div>
       {% if site.author.disqus %}
       <div class="valign-wrapper" style="margin-top: 16px;">

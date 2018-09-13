@@ -68,17 +68,9 @@ layout: default
       </div>
       {% for post in site.projects %}
         {% if post.image.path %}
-        <div class="col s12">
-          <article>
-            <div class="card large hoverable slideItem">
-              <div class="card-image">
-                <img class="materialboxed" data-caption="© {{ post.image.copyright }}" src="{{ post.image.path }}">
-                <span class="card-title" style="background-color: rgba(0,0,0,.3); cursor: pointer; padding: 8px 24px; width: 100%;" onclick="window.location='{{ site.baseurl }}{{ post.url }}'">
-                  {{ post.title }}
-                </span>
-              </div>
-            </div>
-          </article>
+        <div class="col s12 post">
+           {% capture projects %}{% include post_card.html post=post markdown=true %}{% endcapture %}
+           {{ projects }}
         </div>
         {% endif %}
       {% endfor %}

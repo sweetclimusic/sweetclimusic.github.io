@@ -23,9 +23,12 @@
       {% endif %}
       <div id="post-content flow-text">
         {% if post.markdown %}
-          {{ include.post.content | markdownify  }}
+          {{ include.post.excerpt | markdownify  }}
         {% else %}
           {{ include.post.content | strip_html | truncate: 140, "…" }}
+        {% endif %}
+        {% if post.excerpt != post.content %}
+            <a href="{{ post.url | prepend: site.baseurl }}">Read more</a>
         {% endif %}
       </div>
       {% if site.author.disqus %}

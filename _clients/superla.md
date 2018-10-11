@@ -2,7 +2,7 @@
 title: "Superla"
 layout: client
 image:
-  path: "/assets/img/clients/logo_superla.png"
+  path: "/assets/img/clients/sm_logo_superla.png"
   copyright: "superla.tv"
 webpage: "superla.tv"
 ---

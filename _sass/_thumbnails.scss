@@ -4,8 +4,8 @@
     position: relative;
     left : 1.8rem;
 	top : -1.8rem;
-	height : 60%; //320px;
-	width : 40%; //530px;
+	max-height : 18.75rem !important;
+	max-width : 22.937rem !important;
 	box-shadow: 10px 10px 60px 0px rgba(0,0,0,0.75);
     overflow: hidden;
 }
@@ -39,4 +39,8 @@ h6.thumbnail{
 	& > span{
 		margin-left: 1.8rem;
 	}
+}
+.img.left{
+	height: 100%;
+	width: 100%;
 }

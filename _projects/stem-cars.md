@@ -4,7 +4,7 @@ author: {{site.author}}
 layout: project
 tags: ['PC', 'Early learning', 'STEM','companion app']
 image:
-  path: "/assets/img/projects/emotion.png"
+  path: "assets/img/projects/emotion.png"
   animation: "/assets/img/projects/emotion.gif"
 ---
 

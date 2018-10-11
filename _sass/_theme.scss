@@ -116,17 +116,18 @@ img.hero{
 }
 
 .ghost-title{
-  height: 4.8rem;
-  display: flex;
+  display: inline-flex;
   width: 100%;
+  height: auto;
   margin-bottom: 0.3rem;
   & .specter{
     position : relative;
 	  top : 0;
-	  font-size : 6rem;
+	  font-size : 4.8rem;
 	  font-weight : 800;
 	  text-transform : uppercase;
-	  transform: translate(-5%,-100%);
+    transform: translate(-5%,-100%);
+    line-height: 4rem;
   }
 }
 .ghost-title > .specter.shortoffset{
@@ -134,14 +135,28 @@ img.hero{
 }
 
 .card img.excerpt-img{
-  width:315px;
-  min-width:19.68rem;
-  max-width:39.375rem;
-  height:250px;
-  min-height:15.625rem;
-  max-height:31.25rem;
+  min-width:15.06rem;
+  max-width:36.937rem;
+  height: auto !important;
+  width: 241px !important;
+  min-height:10.875rem;
+  max-height:26.5625rem;
 }
 
 div.post{
   margin-bottom: 2.625rem;
+}
+
+.card-image.thumbnail{
+  img{
+  background-image: url("../img/placeholder.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  min-width: 315px;
+  min-height: 315px;
+    &::after{
+      content: "";
+    }
+  }
+  
 }

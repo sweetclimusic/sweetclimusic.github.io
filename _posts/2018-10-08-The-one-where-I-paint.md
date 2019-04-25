@@ -15,6 +15,6 @@ At the start of 2018 I did a intro to [Substance Painter](https://www.allegorith
 I manage to complete the course in the 10 day free trial on plural sight. So If you don't have a subscription and have a week of dedication. You can still benifit greatly from this course if you'r wanting to learn Substance painter 2018.
 
 Here's my final render after the course.
-![Image Viewer]({{page.image.path}})
+![Image Viewer]({{ page.image.path }})
 
 [Original Model Demon Fatty by BitGem](https://assetstore.unity.com/packages/3d/characters/demon-fatty-91601)

@@ -13,17 +13,17 @@ For the month of April (2019) I've been learning iOS ARkit. I've been learning i
 <!--more-->
 
 <div class="ex">
-<a rel="ar" href="{{ "assets/models/goat.usdz" | prepend: site.url }}">
-  <img src="{{ "assets/img/models/goat.png" | prepend: site.url }}">
+<a rel="ar" href="{{ "/assets/models/goat.usdz" | prepend: site.url }}">
+  <img src="{{ "/assets/img/models/goat.png" | prepend: site.url }}">
 </a>
-<a rel="ar" href="{{ "assets/models/chicken.usdz" | prepend: site.url }}">
-  <img src="{{ "assets/img/models/chicken.png" | prepend: site.url }}">
+<a rel="ar" href="{{ "/assets/models/chicken.usdz" | prepend: site.url }}">
+  <img src="{{ "/assets/img/models/chicken.png" | prepend: site.url }}">
 </a>
-<a rel="ar" href="{{ "assets/models/alpaca.usdz" | prepend: site.url }}">
-  <img src="{{ "assets/img/models/alpaca.png" | prepend: site.url }}">
+<a rel="ar" href="{{ "/assets/models/alpaca.usdz" | prepend: site.url }}">
+  <img src="{{ "/assets/img/models/alpaca.png" | prepend: site.url }}">
 </a>
-<a rel="ar" href="{{ "assets/models/sheep.usdz" | prepend: site.url }}">
-  <img src="{{ "assets/img/models/sheep.png" | prepend: site.url }}">
+<a rel="ar" href="{{ "/assets/models/sheep.usdz" | prepend: site.url }}">
+  <img src="{{ "/assets/img/models/sheep.png" | prepend: site.url }}">
 </a>
 </div>
 

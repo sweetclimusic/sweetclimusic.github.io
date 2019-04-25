@@ -149,9 +149,6 @@ div.post{
 
 .card-image.thumbnail{
   img{
-  background-image: url("../img/placeholder.png");
-  background-repeat:no-repeat;
-  background-size:cover;
   min-width: 315px;
   min-height: 315px;
     &::after{

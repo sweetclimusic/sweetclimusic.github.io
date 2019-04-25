@@ -23,6 +23,7 @@ company: Green Farm Games Ltd
 story: Green Farm Games, An independent video games studio specializing in immersive games
    and software development. Utilizing all forms of immersive technologies( AR, VR, XR ) to bring multimedia experiences to life for local and global businesses. Situatied on a working farm in Clifton, West Yorkshire, I draw insperaton from the surrounding picturesque rollings green hills here at Green Farm Games.
 excerpt_separator: <!--more-->
+cardImage: assets/img/placeholder.png
 # Build settings
 markdown: kramdown
 remote-theme: sweetclimusic/Freelance
@@ -59,8 +60,6 @@ defaults:
 
 feed:
   path: atom.xml
-
-markdown: kramdown
 
 paginate: 5
 paginatePath: "/blog/page/:num/"

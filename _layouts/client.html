@@ -10,12 +10,14 @@ layout: default
       <div class="col s12">
         <article>
           <div class="card">
-            {% if page.image.path %}
-            <div class="card-image clients">
+              <div class="card-image clients">
+              {% if page.image.path %}
               <img class="materialboxed" data-caption="© {{ page.image.copyright }}" src="{{ page.image.path | prepend: site.url }}">
+              {% else %}
+              <img class="materialboxed" data-caption="© {{ page.image.copyright }}" src="{{ site.cardImage | prepend: site.url }}">
+              {% endif %}
               <span class="card-title truncate" style="background-color: rgba(0,0,0,.3); width: 100%;">{{ page.title }}</span>
-            </div>
-            {% endif %}
+              </div>
             <div class="card-content">
               {% unless page.image.path %}
               <span class="card-title truncate">{{ page.title }}</span>

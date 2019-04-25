@@ -5,7 +5,7 @@ category: notice
 layout: post
 tags: ['Showoff','Substance Painter', 'pluralsight','allegorithmic','training','3D painting','Unity','Asset Store']
 image:
-  path: {{ "assets/img/posts/demon_fatty_3dpaint.png" | prepend: site.url }}
+  path: assets/img/posts/demon_fatty_3dpaint.png
   copyright: Ashlee Muscroft
 ccl: by-nc-nd
 ---

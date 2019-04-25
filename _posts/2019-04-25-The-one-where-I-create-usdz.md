@@ -5,7 +5,7 @@ category: notice
 layout: post
 tags: ['Showoff','Cute Farm Animals', 'AR quick look','apple','iOS 12','Safari 12','ARKit','.usdz']
 image:
-  path: {{ "assets/img/posts/usdz_gallery.png" | prepend: site.url }}
+  path: assets/img/posts/usdz_gallery.png
   copyright: Ashlee Muscroft
 ccl: by-nc-nd
 ---

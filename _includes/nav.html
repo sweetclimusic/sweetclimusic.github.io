@@ -23,9 +23,11 @@
     <div class="user-view">
       <div class="background green"></div>
       <img class="circle materialboxed" data-caption="{{ site.title }}" src="{{ "/assets/img/logo.png" | prepend: site.url }}" alt="Site Logo">
-      <span class="white-text name">Hire Us</span>
+      <span class="white-text name">Hire Me</span>
       {% if site.author.email %}
       <a href="mailto:{{ site.author.email }}"><span class="white-text email">{{ site.author.email }}</span></a>
+      {% else %}
+      {% include hiremesmall.html %}
       {% endif %}
     </div>
   </li>

@@ -1,10 +1,14 @@
 //build a project card layout
 .ex{
     display: flex;
+    flex-wrap: wrap;
     & div{
         max-height : 18.75rem !important;
         max-width : 22.937rem !important;
         flex-basis: 350px;
+    }
+    & a{
+        flex: 0 1 150px;
     }
     .ex1{
         border-right: 1px #666 solid;

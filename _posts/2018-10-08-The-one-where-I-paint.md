@@ -5,7 +5,7 @@ category: notice
 layout: post
 tags: ['Showoff','Substance Painter', 'pluralsight','allegorithmic','training','3D painting','Unity','Asset Store']
 image:
-  path: https://unsplash.com/photos/DrLtv2bgXSc/download?force=true
+  path: {{ "assets/img/posts/demon_fatty_3dpaint.png" | prepend: site.url }}
   copyright: Ashlee Muscroft
 ccl: by-nc-nd
 ---
@@ -15,6 +15,6 @@ At the start of 2018 I did a intro to [Substance Painter](https://www.allegorith
 I manage to complete the course in the 10 day free trial on plural sight. So If you don't have a subscription and have a week of dedication. You can still benifit greatly from this course if you'r wanting to learn Substance painter 2018.
 
 Here's my final render after the course.
-![Image Viewer](https://unsplash.com/photos/EXSh-k3wjds/download?force=true)
+![Image Viewer]({{page.image.path}})
 
 [Original Model Demon Fatty by BitGem](https://assetstore.unity.com/packages/3d/characters/demon-fatty-91601)

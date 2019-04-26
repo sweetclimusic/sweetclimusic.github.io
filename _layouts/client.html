@@ -27,7 +27,7 @@ layout: default
                 {{ content | replace: "<img", "<img class='materialboxed'" }}
               </div>
               {% if page.ccl %}
-                {% incldue cclnotice.html %}
+                {% include cclnotice.html %}
               {% endif %}
               <div class="divider" style="margin: 16px 0;"></div>
               {% for tag in page.tags %}

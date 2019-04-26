@@ -5,7 +5,7 @@ category: blog
 layout: post
 tags: ['AR quick look','apple','iOS 12','Safari 12','ARKit','.usdz']
 image:
-  path: /assets/img/models/wateringcan.jpg
+  path: /assets/img/placeholder.png
   copyright: Ashlee Muscroft
 ccl: by-nc-nd
 ---
@@ -55,7 +55,7 @@ I then changed my sites content type to:
 /*.usdz
   Content-Type: model/vnd.pixar.usd;
 ``` 
-Now the watering can works on iOS12 safari. 
+Now the watering can works on iOS12 safari.
 
 One other slipup, was the need to include, 'include' config in the _config.yaml file as this site is built with Jekyll. Netlify needs a _header file to exists when you define custom headers. The Jekyll site builder doesn't include these automatically. It's a slipup on my part as this was in the first paragraph of netlify docs on creating custom header. oops.
 

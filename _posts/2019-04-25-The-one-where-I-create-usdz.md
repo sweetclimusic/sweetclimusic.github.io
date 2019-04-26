@@ -12,7 +12,7 @@ ccl: by-nc-nd
 For the month of April (2019) I've been learning iOS ARkit. I've been learning it both natively and view unity. I wanted to try out the new (to me) .USDZ files and AR Quick look after learning about the workflow from a title of a meetup event for leeds digital festival 2019. Like the good developer I am, figured I could experiment myself instead of going to a talk on the subject.
 <!--more-->
 <div class="row">
-  <div class="col offset-l2 l4 s12">
+  <div class="col offset-l3 l6 s12">
     <div class="row">
       <div class="card">
         <a class="card-image" rel="ar" href="/assets/models/goat.usdz">
@@ -32,11 +32,6 @@ For the month of April (2019) I've been learning iOS ARkit. I've been learning i
         </a>
       </div>
       <div class="card">
-        <a class="card-image" rel="ar" href="/assets/models/wateringcan.usdz">
-          <img src="{{ "/assets/img/models/sheep.png" | prepend: site.url }}">
-        </a>
-      </div>
-      <div class="card">
       <a class="card-image" rel="ar" href="/assets/models/sheep.usdz">
         <img src="{{ "/assets/img/models/sheep.png" | prepend: site.url }}">
       </a>
@@ -46,3 +41,5 @@ For the month of April (2019) I've been learning iOS ARkit. I've been learning i
 </div>
 
 [All I know about AR Quick Look can be found in one video](https://developer.apple.com/videos/play/wwdc2018/603/)
+_Edit 26/04/19_
+[but then I learned a bit more...](/blog/2019/04/27/the-one-where-i-learn-a-bit-more/) 

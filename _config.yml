@@ -44,6 +44,7 @@ exclude: ["Gemfile",
           "_site",
           "path"
           ]
+include: ['_headers']          
 collections:
   projects:
     output: true

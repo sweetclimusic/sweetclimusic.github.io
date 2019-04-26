@@ -12,7 +12,7 @@ ccl: by-nc-nd
 For the month of April (2019) I've been learning iOS ARkit. I've been learning it both natively and view unity. I wanted to try out the new (to me) .USDZ files and AR Quick look after learning about the workflow from a title of a meetup event for leeds digital festival 2019. Like the good developer I am, figured I could experiment myself instead of going to a talk on the subject.
 <!--more-->
 <div class="row">
-  <div class="col l4 s12">
+  <div class="col offset-l2 l4 s12">
     <div class="row">
       <div class="card">
         <a class="card-image" rel="ar" href="/assets/models/goat.usdz">

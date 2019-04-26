@@ -91,5 +91,5 @@ Materialize-Jekyll is licensed under the [MIT License](./LICENSE).
 
 [Roboto](https://fonts.google.com/specimen/Roboto) is licensed under an [Apache License 2.0](http://www.apache.org/licenses/LICENSE-2.0) by Christian Robertson.
 
-Once upon a time was based on this theme, have heavly changed things since then.
-[![Github All Releases](https://img.shields.io/github/downloads/Astro36/Materialize-Jekyll/total.svg?style=flat-square)](https://github.com/Astro36/Materialize-Jekyll/releases)
+Once upon a time Freelance theme was based on Astro36/Materialize-Jekyll, I have heavly changed things since then.
+[![Github All Releases](https://img.shields.io/github/downloads/Astro36/Materialize-Jekyll/total.svg?style=flat-square)](https://github.com/sweetclimusic/Materialize-Jekyll/releases)

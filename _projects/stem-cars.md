@@ -1,6 +1,7 @@
 ---
 title: "E-motion stem cars"
 author: {{site.author}}
+category: projects
 layout: project
 tags: ['PC', 'Early learning', 'STEM','companion app']
 image:

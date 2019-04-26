@@ -70,3 +70,9 @@ layout: default
 {% if site.author.disqus %}
 <script id="dsq-count-scr" src="//{{ site.author.disqus }}.disqus.com/count.js" async></script>
 {% endif %}
+<script type="text/javascript">
+  if($.fn.initStickyHeader){
+    //disable any scroll binding on a post..
+    $(window).off("scroll");
+  }
+</script>

@@ -1,6 +1,7 @@
 ---
 title: "Dead Wave"
 author: {{ site.author }}
+category: projects
 layout: project
 tags: ['Unity','Oculus Go', 'VR', 'XR','Mobile VR','Multiplayer']
 image:

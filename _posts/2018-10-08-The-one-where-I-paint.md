@@ -1,7 +1,7 @@
 ---
 title: "My Intro to Substance Painter"
 author: Ashlee Muscroft
-category: notice
+category: blog
 layout: post
 tags: ['Showoff','Substance Painter', 'pluralsight','allegorithmic','training','3D painting','Unity','Asset Store']
 image:

@@ -1,6 +1,7 @@
 ---
 title: "Gamkedo"
 author: {{site.author}}
+category: projects
 layout: project
 tags: ['web', 'Unity','Unity3d','WebGL','Gamkedo']
 image:

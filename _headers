@@ -1,7 +1,4 @@
-/blog/*
-    Content-Type: model/vnd.usdz+zip, base64, usdz;
-    Content-Type: model/vnd.pixar.usd, base64, usdz;
 /*.usdz
-  Content-Type: model/vnd.usdz+zip, base64;
+  Content-Type: model/vnd.usdz+zip;
 /*.usd
-  Content-Type: model/vnd.pixar.usd, base64;
+  Content-Type: model/vnd.pixar.usd;

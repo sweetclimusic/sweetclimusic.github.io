@@ -20,7 +20,7 @@ For the month of April (2019) I've been learning iOS ARkit. I've been learning i
         </a>
       </div>
       <div class="card">
-        <a rel="ar" href="/assets/models/chicken.usdz">
+        <a class="card-image" rel="ar" href="/assets/models/chicken.usdz">
           <img src="{{ "/assets/img/models/chicken.png" | prepend: site.url }}">
         </a>
       </div>

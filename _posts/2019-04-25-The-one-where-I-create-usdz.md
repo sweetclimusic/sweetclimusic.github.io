@@ -9,30 +9,32 @@ image:
   copyright: Ashlee Muscroft
 ccl: by-nc-nd
 ---
+
 For the month of April (2019) I've been learning iOS ARkit. I've been learning it both natively and view unity. I wanted to try out the new (to me) .USDZ files and AR Quick look after learning about the workflow from a title of a meetup event for leeds digital festival 2019. Like the good developer I am, figured I could experiment myself instead of going to a talk on the subject.
+
 <!--more-->
 <div class="row">
   <div class="col offset-l3 l6 s12">
     <div class="row">
       <div class="card">
-        <a class="card-image" rel="ar" href="/assets/models/goat.usdz">
+        <a class="card-image" rel="ar" href="#">
           <img src="{{ "/assets/img/models/goat.png" | prepend: site.url }}">
         </a>
       </div>
       <div class="card">
-        <a class="card-image" rel="ar" href="/assets/models/chicken.usdz">
+        <a class="card-image" rel="ar" href="/#" alt="doesn't work as a usdz yet">
           <img src="{{ "/assets/img/models/chicken.png" | prepend: site.url }}">
         </a>
       </div>
     </div>
     <div class="row">
       <div class="card">
-        <a class="card-image" rel="ar" href="/assets/models/alpaca.usdz">
+        <a class="card-image" rel="ar" href="#">
           <img src="{{ "/assets/img/models/alpaca.png" | prepend: site.url }}">
         </a>
       </div>
       <div class="card">
-      <a class="card-image" rel="ar" href="/assets/models/sheep.usdz">
+      <a class="card-image" rel="ar" href="/assets/models/sheep.usdz" alt="only animal put through new pipeline">
         <img src="{{ "/assets/img/models/sheep.png" | prepend: site.url }}">
       </a>
       </div>

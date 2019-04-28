@@ -17,4 +17,26 @@ I manage to complete the course in the 10 day free trial on plural sight. So If 
 Here's my final render after the course.
 ![Image Viewer]({{ page.image.path }})
 
+## Bonus - made a AR version
+<p class="violator margin-top-small">Visit this page on iOS 12 to try AR Quick Look</p>
+<div class="row">
+  <div class="col offset-l3 l6 s12">
+    <div class="row"> 
+      <div class="card">
+        <a class="card-image" rel="ar" href="/assets/models/handpainting_training.usdz">
+          <img src="{{ page.image.path | prepend: site.url }}">
+        </a>
+      </div>
+    </div>
+    <div class="row"> 
+      <div class="card">
+      <p class="violator margin-top-small">usdz workflow 2</p>
+        <a class="card-image" rel="ar" href="/assets/models/demonfatty.usdz">
+          <img src="{{ page.image.path | prepend: site.url }}">
+        </a>
+      </div>
+    </div>
+  </div>  
+</div>
+
 [Original Model Demon Fatty by BitGem](https://assetstore.unity.com/packages/3d/characters/demon-fatty-91601)
